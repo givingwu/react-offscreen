@@ -27,10 +27,10 @@ jobs:
           version: latest
           
       - name: Install root dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
         
       - name: Install example dependencies
-        run: cd example && pnpm install
+        run: cd example && pnpm install --no-frozen-lockfile
         
       - name: Build example
         run: cd example && pnpm build

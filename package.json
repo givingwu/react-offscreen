@@ -17,7 +17,8 @@
     "url": "https://github.com/IVLIU/react-offscreen"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=16",
+    "pnpm": ">=8"
   },
   "scripts": {
     "start": "tsdx watch",
