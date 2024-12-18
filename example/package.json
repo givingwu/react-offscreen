@@ -1,7 +1,6 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
@@ -14,13 +13,15 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@ivliu/react-offscreen": "^1.0.8",
+    "@vitejs/plugin-react": "^4.2.0",
     "ahooks": "^3.8.4",
     "antd": "^5.22.5",
     "clsx": "^2.1.1",
+    "react": "^19.0.0",
     "react-app-polyfill": "^1.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "6.20.0",
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.2.0"
+    "vite": "^5.0.0"
   },
   "alias": {
     "react": "../node_modules/react",
