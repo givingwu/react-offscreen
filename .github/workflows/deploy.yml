@@ -33,7 +33,7 @@ jobs:
         run: cd example && pnpm install --no-frozen-lockfile
         
       - name: Build example
-        run: cd example && pnpm build
+        run: cd example && DEPLOY_ENV=gh-pages pnpm build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
