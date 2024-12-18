@@ -5,6 +5,10 @@
 
 react-offscreen can hide components without uninstalling them
 
+## Online Demo
+
+[View Demo](https://givingwu.github.io/react-offscreen)
+
 ## Features
 
 - based on Suspense
