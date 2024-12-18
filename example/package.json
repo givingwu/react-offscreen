@@ -8,7 +8,17 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.0"
+    "@ant-design/icons": "^5.5.2",
+    "@ant-design/pro-components": "^2.8.2",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@ivliu/react-offscreen": "^1.0.8",
+    "ahooks": "^3.8.4",
+    "antd": "^5.22.5",
+    "clsx": "^2.1.1",
+    "react-app-polyfill": "^1.0.0",
+    "react-router-dom": "6.20.0"
   },
   "alias": {
     "react": "../node_modules/react",
@@ -18,7 +28,8 @@
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
+    "parcel": "^2.9.0",
+    "process": "^0.11.10",
     "typescript": "^3.4.5"
   }
 }
