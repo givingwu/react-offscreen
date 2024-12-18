@@ -21,15 +21,18 @@ jobs:
         with:
           node-version: '18'
           
-      - name: Setup pnpm
+      - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
           
-      - name: Install Dependencies
+      - name: Install root dependencies
+        run: pnpm install
+        
+      - name: Install example dependencies
         run: cd example && pnpm install
         
-      - name: Build
+      - name: Build example
         run: cd example && pnpm build
         
       - name: Upload artifact
@@ -46,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
