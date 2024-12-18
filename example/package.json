@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
@@ -13,26 +14,19 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@ivliu/react-offscreen": "^1.0.8",
-    "@vitejs/plugin-react": "^4.2.0",
     "ahooks": "^3.8.4",
     "antd": "^5.22.5",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
     "react-app-polyfill": "^1.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "6.20.0",
-    "vite": "^5.0.0"
-  },
-  "alias": {
-    "react": "../node_modules/react",
-    "react-dom": "../node_modules/react-dom/profiling",
-    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+    "react-router-dom": "6.20.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
-    "parcel": "^2.9.0",
-    "process": "^0.11.10",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "vite": "^5.4.11",
+    "@vitejs/plugin-react": "^4.2.0"
   }
 }

@@ -3,7 +3,7 @@ import "antd/dist/reset.css";
 import "./index.css";
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { routes } from "./routes";
@@ -36,4 +36,6 @@ const App = () => {
 	);
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+	<App />,
+);

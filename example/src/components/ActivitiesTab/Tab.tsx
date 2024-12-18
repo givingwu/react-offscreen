@@ -49,7 +49,8 @@ export const Tab: React.FC<ITabProps> = ({
 					"hover:bg-gray-50",
 					"group relative",
 					{
-						"border-primary text-primary bg-primary/5": active,
+						"border-primary border-b-2 border-blue-500 text-primary bg-primary/5":
+							active,
 						"border-transparent hover:text-primary": !active,
 					},
 				)}
