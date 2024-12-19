@@ -76,7 +76,7 @@ export const AuthLayout = ({
 							background: colorBgContainer,
 						}}
 					>
-						<ActivitiesTab activeKey={activeKey} setActiveKey={setActiveKey} />
+						<ActivitiesTab activeKey={activeKey} />
 					</Header>
 					<Content
 						style={{
@@ -89,11 +89,7 @@ export const AuthLayout = ({
 						{tabs.map((route) => (
 							<Activity
 								key={route.path}
-								mode={
-									currentPath.includes(route.path as string)
-										? "visible"
-										: "hidden"
-								}
+								mode={activeKey === route.path ? "visible" : "hidden"}
 							>
 								<Outlet />
 							</Activity>

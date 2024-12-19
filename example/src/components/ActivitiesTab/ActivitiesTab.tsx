@@ -7,20 +7,18 @@ import type { TabItem } from "./Tab";
 
 export interface IActivitiesTabProps {
 	activeKey: string;
-	setActiveKey: (path: string) => void;
 }
 
 export const ActivitiesTab = memo<IActivitiesTabProps>(
-	({ activeKey, setActiveKey }) => {
+	({ activeKey }) => {
 		const navigate = useNavigate();
 		const { tabs, setTabs } = useActivity();
 
 		const handleTabChange = useCallback(
 			(path: string) => {
-				setActiveKey(path);
 				navigate(path);
 			},
-			[setActiveKey, navigate],
+			[navigate],
 		);
 
 		const handleClose = useCallback(
